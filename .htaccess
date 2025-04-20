@@ -1,0 +1,32 @@
+# Order allow,deny
+# Allow from all
+Require all granted
+# AllowOverride FileInfo
+#Header set Access-Control-Allow-Origin 'http://projectpedia-kernel.rf.gd'
+
+<Files .htaccess> 
+Deny from all
+</Files>
+
+<Files .htpasswd> 
+Deny from all
+</Files>
+
+# ErrorDocument 500 "Un script à commis une action illégale et à été arrêté afin de prévenir de futurs dommages..."
+# ErrorDocument 500 http://192.168.1.25/eh/?eid=500&etxt=Erreur%20interne
+# ErrorDocument 404 http://192.168.1.25/eh/?eid=404&etxt=Élément%20introuvable
+# ErrorDocument 403 http://192.168.1.25/eh/?eid=403&etxt=Accès%20refusé
+# ErrorDocument 401 http://192.168.1.25/eh/?eid=401&etxt=Erreur%20de%20permissions
+ErrorDocument 500 "Un script à commis une action illégale et à été arrêté afin de prévenir de futurs dommages..."
+ErrorDocument 500 https://mprj-root.000webhostapp.com/eh/?eid=500&etxt=Erreur%20interne
+ErrorDocument 404 https://mprj-root.000webhostapp.com/eh/?eid=404&etxt=Élément%20introuvable
+ErrorDocument 403 https://mprj-root.000webhostapp.com/eh/?eid=403&etxt=Accès%20refusé
+#ErrorDocument 401 https://mprj-root.000webhostapp.com/eh/?eid=401&etxt=Erreur%20de%20permissions
+
+<FilesMatch "\.(?i:jpg|gif|png)$">
+  #Header set Content-Disposition attachment
+</FilesMatch>
+
+#RewriteEngine On
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]

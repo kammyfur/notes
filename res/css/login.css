@@ -1,0 +1,222 @@
+body#Login {
+    padding: 10px;
+    overflow: hidden;
+}
+
+body#Privacy {
+    padding: 10px;
+}
+
+#Login_Logo {
+    float: right;
+    z-index: 999;
+    position: fixed;
+    right: 10px;
+}
+
+.Login_Vcenter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 40%;
+}
+
+#Login_Title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.spinner {
+    animation: rotator 1.4s linear infinite;
+}
+@keyframes rotator {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+.path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+@keyframes colors {
+    0% {
+        stroke: #0c51fe;
+    }
+    25% {
+        stroke: #0aace8;
+    }
+    50% {
+        stroke: #2817ff;
+    }
+    75% {
+        stroke: #012bff;
+    }
+    100% {
+        stroke: #0c51fe;
+    }
+}
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        transform: rotate(450deg);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.Login_Input {
+    border: none;
+    padding: 10px;
+    border-bottom-color: #0b50ff;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    transition: border-bottom-color 200ms;
+}
+
+.Login_Input::placeholder {
+    color: #0b50ff;
+    opacity: 1 !important;
+}
+
+.Login_Input:hover {
+    border-bottom-color: #0b3cb8;
+    transition: border-bottom-color 200ms;
+}
+
+.Login_Input:active {
+    border-bottom-color: #2e6aff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Login_Input:hover::placeholder {
+    color: #0b3cb8;
+    transition: color 200ms;
+}
+
+.Login_Input:active::placeholder {
+    color: #2e6aff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Login_InputErr {
+    border: none;
+    padding: 10px;
+    border-bottom-color: #ff0b0b;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    transition: border-bottom-color 200ms;
+}
+
+.Login_InputErr::placeholder {
+    color: #ff0b0b;
+    opacity: 1 !important;
+}
+
+.Login_InputErr:hover {
+    border-bottom-color: #b80b0b;
+    transition: border-bottom-color 200ms;
+}
+
+.Login_InputErr:active {
+    border-bottom-color: #ff2e2e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Login_InputErr:hover::placeholder {
+    color: #b80b0b;
+    transition: color 200ms;
+}
+
+.Login_InputErr:active::placeholder {
+    color: #ff2e2e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Login_Next {
+    cursor: pointer;
+    filter: none;
+    transition: filter 500ms;
+}
+
+.Login_Next:hover {
+    filter: brightness(125%);
+    transition: filter 200ms;
+}
+
+.Login_Next:active {
+    filter: brightness(150%);
+    transition: filter 200ms;
+}
+
+.Signup_Privacy {
+    color: black;
+}
+
+.Oauth2_Allow {
+    color: white;
+    background: #2615fd;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 200ms;
+}
+
+.Oauth2_Allow:hover {
+    color: white !important;
+    background: #0b50ff !important;
+    padding: 5px 10px !important;
+    margin-right: 5px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+.Oauth2_Allow:active {
+    color: white !important;
+    background: #3f79fe !important;
+    padding: 5px 10px !important;
+    margin-right: 5px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+.Oauth2_Deny {
+    color: gray;
+    cursor: pointer;
+    text-decoration-line: underline;
+    font-size: 12px;
+    vertical-align: middle;
+    transition: color 200ms;
+}
+
+.Oauth2_Deny:hover {
+    color: lightgray;
+    cursor: pointer;
+    text-decoration-line: underline;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.Oauth2_Deny:active {
+    color: black;
+    cursor: pointer;
+    text-decoration-line: underline;
+    font-size: 12px;
+    vertical-align: middle;
+}

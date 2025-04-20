@@ -1,0 +1,482 @@
+a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."] {
+    display: none;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 40%;
+}
+
+body {
+    font-family: 'Ubuntu','Carlito','Calibri','Segoe UI','Arial','Liberation Sans',sans-serif;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.navigator {
+    position: fixed;
+    width: 100%;
+    background-color : rgba(237, 237, 237, 0.97);
+    padding: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(237, 237, 237, 0.97);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 99.2%;
+    box-shadow: 1px 1px 24px lightgray;
+}
+
+.loader2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.75);
+    z-index: 6;
+}
+
+.profile-picture {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background: lightgray;
+    border-radius: 100px;
+    height: 40px;
+    box-shadow: 1px 1px 12px #bfbfbf;
+    vertical-align: middle;
+}
+
+.profile-picture-big {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background: lightgray;
+    border-radius: 100px;
+    height: 80px;
+    box-shadow: 1px 1px 32px #808080;
+    vertical-align: middle;
+    transition: height 500ms;
+}
+
+.navlink {
+    margin: 0px 20px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navlink:hover {
+    margin: 0px 20px;
+    color: #000;
+    font-weight: bold;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.liel {
+    max-width: 100%;
+    width: 100%;
+    /* height: calc(100vh - 63px - 20px); */
+    height: auto;
+    padding-top: 63px;
+    background-color: rgb(199, 199, 199);
+    color: #222;
+    padding-bottom: 20px;
+}
+
+.liel-noscroll {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - 63px);
+    padding-top: 63px;
+    background-color: rgb(199, 199, 199);
+    color: #222;
+    overflow: hidden;
+}
+
+.boxes3 {
+    background-color: #fff;
+    height: auto;
+    margin: 25px;
+    width: 94.5%;
+    box-shadow: 1px 1px 12px gray;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    padding: 10px;
+    margin-right: 5px;
+    display: block;
+    transition: margin 500ms;
+}
+
+.boxes3:hover {
+    margin-left: 40px;
+    transition: margin-left 500ms;
+}
+
+input {
+    margin: 2px;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px;
+    border-width: 2px;
+}
+
+input:hover {
+    margin: 2px;
+    border-width: 1px;
+    border-color: #9c9c9c;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px;
+    border-width: 2px;
+}
+
+input:active {
+    margin: 2px;
+    border-width: 1px;
+    border-color: #006fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px;
+    border-width: 2px;
+}
+
+.default > img {
+    vertical-align: middle;   
+    animation-name: shadower;
+    animation-duration: 4s;
+}
+
+@keyframes shadower {
+    0% {box-shadow: 1px 1px 32px #808080;}
+    50% {box-shadow: 1px 1px 1px #808080;}
+    100% {box-shadow: 1px 1px 32px #808080;}
+}
+
+.bigtitle {
+    /* font-weight: bold; */
+    font-size: 48px;
+}
+
+.mediumtitle {
+    /* font-weight: bold; */
+    font-size: 24px;
+}
+
+.default {
+    padding-top: 25%;
+    background: linear-gradient(#9aa1ff, #4e56c7);
+}
+
+input.checker {
+    cursor: pointer;
+}
+
+.navlink:active {
+    margin: 0px 20px;
+    color: #444;
+    font-weight: bold;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #444;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.username {
+    color: #000;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.logged-in {
+    z-index: 4;
+}
+
+.logoff {
+    float: right;
+    vertical-align: middle;
+    color: black;
+    cursor: pointer;
+}
+
+.logoff:hover {
+    float: right;
+    vertical-align: middle;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logoff:active {
+    float: right;
+    vertical-align: middle;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.tip {
+    color: rgb(65, 65, 65);
+    font-size: 12px;
+}
+
+.preHide {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.when-no-js,.too-little,.login,.login-error,.offline,.signup,.signup-error,.signup-success,.privacy {
+    box-shadow: 1px 1px 12px rgb(0, 0, 0);
+    background: rgba(204, 204, 204, 0.4);
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: border-radius 500ms;
+    color: black;
+    padding: 10px;
+}
+
+.privacy-link {
+    cursor: pointer;
+}
+
+.privacyTitle {
+    float: left;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.privacyClose {
+    padding: 5px 10px;
+    float: right;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    background: transparent;
+    transition: background 200ms;
+}
+
+.privacyClose:active {
+    background: #484848;
+    border-radius: 10px;
+    transition: background 200ms;
+}
+
+.privacyClose:hover {
+    background: gray;
+    border-radius: 10px;
+    transition: background 200ms;
+}
+
+.privacyText {
+    width: 96.5%;
+    height: 100%;
+    background: white;
+    margin: 5px;
+    padding: 5px;
+    max-width: 98%;
+    max-height: 85%;
+    text-align: left;
+    font-family: serif;
+    overflow-y: scroll;
+    border-radius: 10px;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    cursor: text;
+}
+
+.liback {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgb(199, 199, 199);
+}
+
+.bphlogin0 {
+    background-image: url('/res/img/ani.gif');
+    background-color: rgb(37, 37, 37);
+    background-size: 100%;
+    background-position: center;
+    color: rgb(77, 77, 77);
+}
+
+.notelink {
+    cursor: pointer;
+}
+
+.notelink:hover {
+    text-decoration: underline;
+}
+
+.notelink:active {
+    text-decoration: underline;
+    color: grey;
+}
+
+.bphlicnt0 {
+    background-image: none;
+    background-color: rgb(199, 199, 199);
+    background-size: 100%;
+    background-position: center;
+    color: rgb(77, 77, 77);
+}
+
+.when-no-js:hover, .too-little:hover, .login:hover, .login-error:hover, .offline:hover, .signup:hover, .signup-error:hover, .signup-success:hover {
+    border-radius: 5px;
+    transition: border-radius 500ms;
+}
+
+#filesize {
+    float: right;
+}
+
+.littleTransparency {
+    opacity: 0.9;
+}
+
+.stb {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    padding-top: 17.5%;
+    background: rgb(0, 0, 0, 0.4);
+    z-index: 999;
+}
+
+#text {
+    cursor: normal;
+}
+
+#profilepicture2:hover {
+    height: 120px;
+    transition: height 200ms;
+}
+
+.errorbox {
+    box-shadow: 1px 1px 12px rgb(255, 76, 76);
+    background: rgb(255, 118, 118);
+    border-width: 1px;
+    border-color: rgb(255, 76, 76);
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+}
+
+.successbox {
+    box-shadow: 1px 1px 12px rgb(76, 255, 106);
+    background: rgb(118, 255, 106);
+    border-width: 1px;
+    border-color: rgb(76, 255, 145);
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+}
+
+.homelink {
+    cursor: pointer;
+}
+
+.jslink {
+    color: rgb(39, 39, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.jslink:hover {
+    color: rgb(87, 87, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.jslink:active {
+    color: rgb(101, 101, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.input-text {
+    font-family: 'Calibri','Segoe UI','Arial','Liberation Sans',sans-serif;
+    border: none;
+    text-align: center;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin: 2px;
+    padding: 3px;
+    border-color: rgb(39, 39, 255);
+    background-color: #6e6e6e1f;
+    box-shadow: none;
+    transition: box-shadow 200ms;
+}
+
+.input-text:hover {
+    box-shadow: 1px 1px 7.5px rgb(39, 39, 255);
+    transition: box-shadow 200ms;
+}
+
+.hide {
+    display: none;
+}
+
+.preShow {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.account-submit {
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(39, 39, 255);
+    background: none;
+    margin-left: 0;
+    box-shadow: none;
+    transition: color 200ms, box-shadow 200ms, margin-left 200ms, background 200ms;
+    cursor: pointer;
+}
+
+.account-submit:hover {
+    color: rgb(240, 240, 240);
+    box-shadow: 1px 1px 7.5px rgb(233, 233, 233);
+    transition: color 200ms, box-shadow 200ms, margin-left 200ms, background 200ms;
+    margin-left: 10px;
+    background: rgb(39, 39, 255);
+}
+
+.account-submit:active {
+    color: rgb(39, 39, 255);
+    box-shadow: 1px 1px 7.5px rgb(39, 39, 255);
+    transition: color 200ms, box-shadow 200ms;
+}
